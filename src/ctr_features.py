@@ -1,19 +1,17 @@
 """CTR feature-strength analysis (Q2).
 
-The assignment is explicit: this is an *analysis* question, not a modelling one.
+The assignment is explicit: this is an analysis question, not a modelling one.
 We rank candidate features by their statistical association with the click target
-using measures that behave well under (a) severe class imbalance and (b) mixed
-categorical/numeric types:
+using measures that behave well under severe class imbalance and with mixed
+categorical and numeric types. Categorical features get weight of evidence and
+information value (IV), the credit-scoring standard for ranking predictors of a
+rare binary event. Numeric features get mutual information, which picks up
+non-linear association that Pearson correlation would miss.
 
-- **Weight of Evidence (WoE) + Information Value (IV)** for categorical features —
-  the credit-scoring standard for ranking predictors of a rare binary event.
-- **Mutual information** for numeric features — captures non-linear association
-  that Pearson correlation would miss.
-
-Crucially we compute everything on the **won** subset only, because ``conversion``
-is undefined (structurally 0) for impressions we never served. We also flag
-**leakage**: auction-outcome columns (bid, won_bid, feedback_bid) are not known
-pre-bid and must not enter a CTR predictor.
+Everything is computed on the won subset only, because ``conversion`` is undefined
+(structurally 0) for impressions we never served. Auction-outcome columns (bid,
+won_bid, feedback_bid) are flagged as leakage: they are not known before the bid
+and must not enter a CTR predictor.
 """
 from __future__ import annotations
 
@@ -21,7 +19,7 @@ import numpy as np
 import pandas as pd
 from sklearn.feature_selection import mutual_info_classif
 
-# Fields produced by / after the auction — unavailable at the moment we'd score CTR.
+# Fields produced by or after the auction: unavailable at the moment we'd score CTR.
 LEAKAGE_COLUMNS = {"bid", "won_bid", "feedback_bid", "conversion", "clicked", "won", "clearing_price"}
 
 # Identifiers: astronomically high cardinality, obfuscated -> not directly usable
@@ -62,7 +60,7 @@ def rank_categorical_iv(df: pd.DataFrame, features: list[str], target: str = "co
         try:
             _, iv = woe_iv(df, f, target)
             rows.append((f, iv, df[f].nunique()))
-        except Exception as exc:  # keep the ranking robust to odd columns
+        except Exception as exc:  # an odd column should not break the whole ranking
             rows.append((f, np.nan, df[f].nunique()))
     out = pd.DataFrame(rows, columns=["feature", "information_value", "n_unique"])
     out["strength"] = pd.cut(

@@ -11,7 +11,7 @@ import pandas as pd
 
 
 def schema_overview(df: pd.DataFrame) -> pd.DataFrame:
-    """Per-column dtype, missingness and cardinality — the classic 'first look'."""
+    """Per-column dtype, missingness and cardinality: the classic first look."""
     return (
         pd.DataFrame(
             {
@@ -28,7 +28,7 @@ def schema_overview(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def constant_columns(df: pd.DataFrame) -> list[str]:
-    """Columns with a single distinct non-null value — zero predictive value."""
+    """Columns with a single distinct non-null value, hence zero predictive value."""
     return [c for c in df.columns if df[c].nunique(dropna=True) <= 1]
 
 

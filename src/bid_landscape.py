@@ -101,7 +101,7 @@ class HierarchicalQuantileModel:
 
 
 def empirical_winrate_curve(prices: np.ndarray, bids: np.ndarray) -> pd.DataFrame:
-    """Realised win rate as a function of bid threshold — for validation plots.
+    """Realised win rate as a function of bid threshold, for validation plots.
 
     Given observed clearing ``prices``, the win rate achievable by bidding ``b`` is
     the fraction of prices strictly below ``b`` (P(b > clearing_price)).

@@ -28,8 +28,8 @@ DEFAULT_DATA_PATH = Path(__file__).resolve().parents[1] / "data" / "data.csv"
 def load_raw(path: str | Path = DEFAULT_DATA_PATH) -> pd.DataFrame:
     """Load the CSV with correct dtypes and a parsed UTC timestamp.
 
-    Adds an ``hour`` column for intraday analysis. Does *not* drop or impute
-    anything — that is the caller's decision, made explicit in the notebook.
+    Adds an ``hour`` column for intraday analysis. Does not drop or impute
+    anything; that is the caller's decision, made explicit in the notebook.
     """
     df = pd.read_csv(path, dtype=_DTYPE_OVERRIDES, low_memory=False)
     df["time"] = pd.to_datetime(df["time"], utc=True, errors="coerce")
@@ -71,5 +71,5 @@ def bidded_frame(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def won_frame(df: pd.DataFrame) -> pd.DataFrame:
-    """Rows where the ad was actually served — the only rows where CTR is defined."""
+    """Rows where the ad was actually served, the only rows where CTR is defined."""
     return df[df["won_bid"].eq(1)].copy()

@@ -6,6 +6,16 @@ data/*.zip
 # --- Assignment brief (kept out of the public repo) ---
 Analysis-NSRB.pdf
 
+# --- Loose reference images dropped in the project root (third-party, unlicensed) ---
+/*.jpg
+/*.jpeg
+/*.webp
+/*.png
+reports/images/candidates/
+
+# --- Local tooling state (diagram-design profile marker points at a machine-local profile) ---
+.diagram-design
+
 # --- Python ---
 __pycache__/
 *.py[cod]
