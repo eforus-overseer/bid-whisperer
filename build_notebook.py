@@ -232,16 +232,16 @@ md("### 2.1 Categorical feature strength: information value")
 code(r"""iv = cf.rank_categorical_iv(won, cat_candidates)
 display(iv.style.format({"information_value":"{:.4f}"}))
 
-fig, ax = plt.subplots(figsize=(7.5,4))
+fig, ax = plt.subplots(figsize=(11,5.5))
 colors = {"strong":vs.STATUS["good"], "medium":vs.CATEGORICAL[0], "weak":vs.CATEGORICAL[3], "useless":vs.INK_MUTED}
 bar_colors = [colors[str(s)] for s in iv["strength"]]
 ax.barh(iv["feature"], iv["information_value"], color=bar_colors)
 ax.invert_yaxis()
 for th,lab in [(0.02,"weak"),(0.1,"medium"),(0.3,"strong")]:
     ax.axvline(th, color=vs.INK_MUTED, lw=0.8, ls=":")
-    ax.text(th, -0.6, lab, fontsize=7, color=vs.INK_MUTED, ha="center")
+    ax.text(th, -0.6, lab, fontsize=8, color=vs.INK_MUTED, ha="center")
 for y,v in enumerate(iv["information_value"]):
-    ax.text(v+0.002, y, f"{v:.3f}", va="center", fontsize=8, color=vs.INK_SECONDARY)
+    ax.text(v+0.002, y, f"{v:.3f}", va="center", fontsize=9, color=vs.INK_SECONDARY)
 vs.despine_labels(ax, "Categorical feature strength (information value)", "IV", None)
 ax.grid(False); ax.set_xlim(0, iv["information_value"].max()*1.25)
 save(fig, "q2_iv_ranking.png"); plt.show()""")
@@ -250,10 +250,10 @@ md("### 2.2 Numeric feature strength: mutual information")
 code(r"""mi = cf.rank_numeric_mi(won, num_candidates)
 display(mi.style.format({"mutual_info":"{:.5f}"}))
 
-fig, ax = plt.subplots(figsize=(6.5,2.8))
+fig, ax = plt.subplots(figsize=(10,3.5))
 ax.barh(mi["feature"], mi["mutual_info"], color=vs.SEQUENTIAL); ax.invert_yaxis()
 for y,v in enumerate(mi["mutual_info"]):
-    ax.text(v+2e-4, y, f"{v:.4f}", va="center", fontsize=8, color=vs.INK_SECONDARY)
+    ax.text(v+2e-4, y, f"{v:.4f}", va="center", fontsize=9, color=vs.INK_SECONDARY)
 vs.despine_labels(ax, "Numeric feature strength (mutual information)", "MI (nats)", None)
 ax.grid(False); ax.set_xlim(0, mi["mutual_info"].max()*1.3)
 save(fig, "q2_mi_ranking.png"); plt.show()""")
