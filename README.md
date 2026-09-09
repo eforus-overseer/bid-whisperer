@@ -7,6 +7,10 @@ One day inside a real-time bidding log: what drives a click, and what it costs t
 </p>
 <p align="center"><sub>Times Square, 1910. Ad slots were auctioned then too, just more slowly. Photo: JFGryphon, CC0 1.0 (<a href="reports/images/CREDITS.md">credits</a>).</sub></p>
 
+<p align="center">
+  <img src="reports/images/in-app-bidding.jpg" alt="Multiple demand partners simultaneously bidding for one mobile ad slot" width="70%">
+</p>
+
 A programmatic ad exchange auctions each ad slot in a few milliseconds. This
 repository takes one day of US bid-request logs from a take-home assignment
 (249,232 impressions, 26 columns, 2021-02-01) and answers the three questions the
@@ -64,6 +68,10 @@ CTR is computed only on won impressions because it is undefined on lost ones.
 </table>
 
 ### Q3. The bid landscape
+
+<p align="center">
+  <img src="reports/images/rtb-auction-mechanics.webp" alt="Five bidders holding paddles with bid amounts; the highest bidder wins but in a second-price auction pays only the runner-up's price" width="80%">
+</p>
 
 To win, a bid has to beat the market clearing price, so `P(win | bid) = F(bid)`
 where `F` is the clearing-price CDF, and the bid that wins X% of the time is the

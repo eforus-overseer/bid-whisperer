@@ -1,8 +1,9 @@
 # Image credits
 
-The photos in this folder are used under Creative Commons licences. They are the
-files Flickr serves at its 1024 px size and have not been edited. Every chart and
-diagram elsewhere in `reports/` was made for this repository.
+## Openly licensed (Flickr, via Openverse)
+
+These photos are the files Flickr serves at its 1024 px size and have not been
+edited. Every chart and diagram elsewhere in `reports/` was made for this repository.
 
 | File | Title | Creator | Licence | Source |
 |---|---|---|---|---|
@@ -14,3 +15,15 @@ above wherever the photo appears, so the README repeats it under the image.
 
 Both photos were found through the Openverse API (https://api.openverse.org), which
 indexes Flickr's openly licensed photos and returns the licence metadata used here.
+
+## Third-party illustrations (unknown licence, included at project owner's request)
+
+These illustrative graphics were provided by the project owner. Their original source
+and licence are not documented; they are used here for private portfolio and
+educational purposes only and should be removed before any public or commercial
+publication.
+
+| File | Description |
+|---|---|
+| `rtb-auction-mechanics.webp` | RTB auction illustration showing five bidders with paddles, bid amounts and what each pays; illustrates first-price vs second-price mechanics. |
+| `in-app-bidding.jpg` | Illustration of multiple demand partners bidding simultaneously for one mobile ad slot. |
