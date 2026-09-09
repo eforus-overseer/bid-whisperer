@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1000 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="hash-schema-title hash-schema-desc">
+      <title id="hash-schema-title">What the obfuscated IDs still reveal</title>
+      <desc id="hash-schema-desc">Entity-relationship model recovered from hashed identifiers: a domain contains many URLs and owns many ad slots, a slot is reused across pages, publisher properties are shared across domains, and each impression references one URL, one ad slot and one publisher-properties record.</desc><defs><style>@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap');</style></defs>
+
+      <rect width="100%" height="100%" fill="#fcfcfb"/>
+
+      <!-- Relationship lines (drawn first). Entities are 224 px wide; gutters between columns are 56 px. -->
+      <!-- R1 Domain - URL, 1:N -->
+      <line x1="264" y1="156" x2="320" y2="156" stroke="#52514e" stroke-width="1"/>
+      <!-- R2 URL - Ad slot, N:N (a slot is reused across pages) -->
+      <line x1="544" y1="156" x2="600" y2="156" stroke="#52514e" stroke-width="1"/>
+      <!-- R3 Domain - Ad slot, 1:N, routed above the URL entity -->
+      <path d="M152,100 V80 Q152,72 160,72 H704 Q712,72 712,80 V100" fill="none" stroke="#52514e" stroke-width="1"/>
+      <!-- R4 Domain - Publisher properties, N:N -->
+      <line x1="152" y1="212" x2="152" y2="320" stroke="#52514e" stroke-width="1"/>
+      <!-- R5 Impression - URL, N:1 (attach points on the Impression top edge fanned at L/3 and 2L/3) -->
+      <path d="M676,320 V272 Q676,264 668,264 H440 Q432,264 432,256 V212" fill="none" stroke="#52514e" stroke-width="1"/>
+      <!-- R6 Impression - Ad slot, N:1 -->
+      <line x1="748" y1="320" x2="748" y2="232" stroke="#52514e" stroke-width="1"/>
+      <!-- R7 Impression - Publisher properties, N:1 -->
+      <line x1="600" y1="396" x2="264" y2="396" stroke="#52514e" stroke-width="1"/>
+
+      <!-- Cardinality labels -->
+      <!-- R1 -->
+      <rect x="270" y="148" width="12" height="12" rx="2" fill="#fcfcfb"/>
+      <text x="276" y="158" fill="#52514e" font-size="10" font-family="'Geist Mono', monospace" text-anchor="middle" font-weight="600">1</text>
+      <rect x="302" y="148" width="16" height="12" rx="2" fill="#fcfcfb"/>
+      <text x="310" y="158" fill="#52514e" font-size="10" font-family="'Geist Mono', monospace" text-anchor="middle" font-weight="600">N</text>
+      <!-- R2 -->
+      <rect x="550" y="148" width="16" height="12" rx="2" fill="#fcfcfb"/>
+      <text x="558" y="158" fill="#52514e" font-size="10" font-family="'Geist Mono', monospace" text-anchor="middle" font-weight="600">N</text>
+      <rect x="578" y="148" width="16" height="12" rx="2" fill="#fcfcfb"/>
+      <text x="586" y="158" fill="#52514e" font-size="10" font-family="'Geist Mono', monospace" text-anchor="middle" font-weight="600">N</text>
+      <!-- R3 -->
+      <rect x="158" y="84" width="12" height="12" rx="2" fill="#fcfcfb"/>
+      <text x="164" y="94" fill="#52514e" font-size="10" font-family="'Geist Mono', monospace" text-anchor="middle" font-weight="600">1</text>
+      <rect x="718" y="84" width="16" height="12" rx="2" fill="#fcfcfb"/>
+      <text x="726" y="94" fill="#52514e" font-size="10" font-family="'Geist Mono', monospace" text-anchor="middle" font-weight="600">N</text>
+      <!-- R4 -->
+      <rect x="158" y="218" width="16" height="12" rx="2" fill="#fcfcfb"/>
+      <text x="166" y="228" fill="#52514e" font-size="10" font-family="'Geist Mono', monospace" text-anchor="middle" font-weight="600">N</text>
+      <rect x="158" y="302" width="16" height="12" rx="2" fill="#fcfcfb"/>
+      <text x="166" y="312" fill="#52514e" font-size="10" font-family="'Geist Mono', monospace" text-anchor="middle" font-weight="600">N</text>
+      <!-- R5 -->
+      <rect x="682" y="302" width="16" height="12" rx="2" fill="#fcfcfb"/>
+      <text x="690" y="312" fill="#52514e" font-size="10" font-family="'Geist Mono', monospace" text-anchor="middle" font-weight="600">N</text>
+      <rect x="438" y="218" width="12" height="12" rx="2" fill="#fcfcfb"/>
+      <text x="444" y="228" fill="#52514e" font-size="10" font-family="'Geist Mono', monospace" text-anchor="middle" font-weight="600">1</text>
+      <!-- R6 -->
+      <rect x="754" y="302" width="16" height="12" rx="2" fill="#fcfcfb"/>
+      <text x="762" y="312" fill="#52514e" font-size="10" font-family="'Geist Mono', monospace" text-anchor="middle" font-weight="600">N</text>
+      <rect x="754" y="238" width="12" height="12" rx="2" fill="#fcfcfb"/>
+      <text x="760" y="248" fill="#52514e" font-size="10" font-family="'Geist Mono', monospace" text-anchor="middle" font-weight="600">1</text>
+      <!-- R7 -->
+      <rect x="578" y="388" width="16" height="12" rx="2" fill="#fcfcfb"/>
+      <text x="586" y="398" fill="#52514e" font-size="10" font-family="'Geist Mono', monospace" text-anchor="middle" font-weight="600">N</text>
+      <rect x="270" y="388" width="12" height="12" rx="2" fill="#fcfcfb"/>
+      <text x="276" y="398" fill="#52514e" font-size="10" font-family="'Geist Mono', monospace" text-anchor="middle" font-weight="600">1</text>
+
+      <!-- Entity: Domain -->
+      <rect x="40" y="100" width="224" height="112" rx="6" fill="#ffffff" stroke="#0b0b0b" stroke-width="1"/>
+      <rect x="40" y="100" width="224" height="40" rx="6" fill="rgba(11,11,11,0.04)" stroke="none"/>
+      <rect x="40" y="132" width="224" height="8" fill="rgba(11,11,11,0.04)"/>
+      <line x1="40" y1="140" x2="264" y2="140" stroke="rgba(11,11,11,0.22)" stroke-width="1"/>
+      <text x="56" y="116" fill="#52514e" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.14em">ENTITY</text>
+      <text x="56" y="132" fill="#0b0b0b" font-size="14" font-weight="600" font-family="'Geist', sans-serif">Domain</text>
+      <text x="56" y="160" fill="#0b0b0b" font-size="10" font-family="'Geist Mono', monospace"># domain</text>
+      <text x="248" y="160" fill="#52514e" font-size="10" font-family="'Geist Mono', monospace" text-anchor="end">hex(32)</text>
+      <text x="56" y="180" fill="#0b0b0b" font-size="10" font-family="'Geist Mono', monospace">distinct</text>
+      <text x="248" y="180" fill="#52514e" font-size="10" font-family="'Geist Mono', monospace" text-anchor="end">8,635</text>
+      <text x="56" y="200" fill="#0b0b0b" font-size="10" font-family="'Geist Mono', monospace">traffic gini</text>
+      <text x="248" y="200" fill="#52514e" font-size="10" font-family="'Geist Mono', monospace" text-anchor="end">0.92</text>
+
+      <!-- Entity: URL -->
+      <rect x="320" y="100" width="224" height="112" rx="6" fill="#ffffff" stroke="#0b0b0b" stroke-width="1"/>
+      <rect x="320" y="100" width="224" height="40" rx="6" fill="rgba(11,11,11,0.04)" stroke="none"/>
+      <rect x="320" y="132" width="224" height="8" fill="rgba(11,11,11,0.04)"/>
+      <line x1="320" y1="140" x2="544" y2="140" stroke="rgba(11,11,11,0.22)" stroke-width="1"/>
+      <text x="336" y="116" fill="#52514e" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.14em">ENTITY</text>
+      <text x="336" y="132" fill="#0b0b0b" font-size="14" font-weight="600" font-family="'Geist', sans-serif">URL</text>
+      <text x="336" y="160" fill="#0b0b0b" font-size="10" font-family="'Geist Mono', monospace"># url</text>
+      <text x="528" y="160" fill="#52514e" font-size="10" font-family="'Geist Mono', monospace" text-anchor="end">hex(32)</text>
+      <text x="336" y="180" fill="#0b0b0b" font-size="10" font-family="'Geist Mono', monospace">distinct</text>
+      <text x="528" y="180" fill="#52514e" font-size="10" font-family="'Geist Mono', monospace" text-anchor="end">44,208</text>
+      <text x="336" y="200" fill="#0b0b0b" font-size="10" font-family="'Geist Mono', monospace">→ domain</text>
+      <text x="528" y="200" fill="#52514e" font-size="10" font-family="'Geist Mono', monospace" text-anchor="end">one domain · 100%</text>
+
+      <!-- Entity: Ad slot (focal: the unit Q3 prices) -->
+      <rect x="600" y="100" width="224" height="132" rx="6" fill="rgba(42,120,214,0.04)" stroke="#2a78d6" stroke-width="1"/>
+      <rect x="600" y="100" width="224" height="40" rx="6" fill="rgba(42,120,214,0.10)" stroke="none"/>
+      <rect x="600" y="132" width="224" height="8" fill="rgba(42,120,214,0.10)"/>
+      <line x1="600" y1="140" x2="824" y2="140" stroke="rgba(42,120,214,0.40)" stroke-width="1"/>
+      <text x="616" y="116" fill="#2a78d6" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.14em">ENTITY · PRICED IN Q3</text>
+      <text x="616" y="132" fill="#0b0b0b" font-size="14" font-weight="600" font-family="'Geist', sans-serif">Ad slot</text>
+      <text x="616" y="160" fill="#0b0b0b" font-size="10" font-family="'Geist Mono', monospace"># ad_slot</text>
+      <text x="808" y="160" fill="#52514e" font-size="10" font-family="'Geist Mono', monospace" text-anchor="end">hex(32)</text>
+      <text x="616" y="180" fill="#0b0b0b" font-size="10" font-family="'Geist Mono', monospace">distinct</text>
+      <text x="808" y="180" fill="#52514e" font-size="10" font-family="'Geist Mono', monospace" text-anchor="end">35,255</text>
+      <text x="616" y="200" fill="#0b0b0b" font-size="10" font-family="'Geist Mono', monospace">→ domain</text>
+      <text x="808" y="200" fill="#52514e" font-size="10" font-family="'Geist Mono', monospace" text-anchor="end">one domain · 98%</text>
+      <text x="616" y="220" fill="#0b0b0b" font-size="10" font-family="'Geist Mono', monospace">on several pages</text>
+      <text x="808" y="220" fill="#52514e" font-size="10" font-family="'Geist Mono', monospace" text-anchor="end">21% of slots</text>
+
+      <!-- Entity: Publisher properties -->
+      <rect x="40" y="320" width="224" height="112" rx="6" fill="#ffffff" stroke="#0b0b0b" stroke-width="1"/>
+      <rect x="40" y="320" width="224" height="40" rx="6" fill="rgba(11,11,11,0.04)" stroke="none"/>
+      <rect x="40" y="352" width="224" height="8" fill="rgba(11,11,11,0.04)"/>
+      <line x1="40" y1="360" x2="264" y2="360" stroke="rgba(11,11,11,0.22)" stroke-width="1"/>
+      <text x="56" y="336" fill="#52514e" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.14em">ENTITY</text>
+      <text x="56" y="352" fill="#0b0b0b" font-size="14" font-weight="600" font-family="'Geist', sans-serif">Publisher properties</text>
+      <text x="56" y="380" fill="#0b0b0b" font-size="10" font-family="'Geist Mono', monospace"># publisher_properties</text>
+      <text x="248" y="380" fill="#52514e" font-size="10" font-family="'Geist Mono', monospace" text-anchor="end">hex(32)</text>
+      <text x="56" y="400" fill="#0b0b0b" font-size="10" font-family="'Geist Mono', monospace">distinct</text>
+      <text x="248" y="400" fill="#52514e" font-size="10" font-family="'Geist Mono', monospace" text-anchor="end">6,802</text>
+      <text x="56" y="420" fill="#0b0b0b" font-size="10" font-family="'Geist Mono', monospace">→ domain</text>
+      <text x="248" y="420" fill="#52514e" font-size="10" font-family="'Geist Mono', monospace" text-anchor="end">one domain · 87%</text>
+
+      <!-- Entity: Impression (the fact row) -->
+      <rect x="600" y="320" width="224" height="152" rx="6" fill="rgba(11,11,11,0.04)" stroke="#52514e" stroke-width="1" stroke-dasharray="4,3"/>
+      <rect x="600" y="320" width="224" height="40" rx="6" fill="rgba(11,11,11,0.06)" stroke="none"/>
+      <rect x="600" y="352" width="224" height="8" fill="rgba(11,11,11,0.06)"/>
+      <line x1="600" y1="360" x2="824" y2="360" stroke="rgba(11,11,11,0.22)" stroke-width="1"/>
+      <text x="616" y="336" fill="#52514e" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.14em">FACT ROW</text>
+      <text x="616" y="352" fill="#0b0b0b" font-size="14" font-weight="600" font-family="'Geist', sans-serif">Impression</text>
+      <text x="616" y="380" fill="#0b0b0b" font-size="10" font-family="'Geist Mono', monospace"># user_id</text>
+      <text x="808" y="380" fill="#52514e" font-size="10" font-family="'Geist Mono', monospace" text-anchor="end">uuid4 · one per row</text>
+      <text x="616" y="400" fill="#0b0b0b" font-size="10" font-family="'Geist Mono', monospace">→ url · → ad_slot</text>
+      <text x="808" y="400" fill="#52514e" font-size="10" font-family="'Geist Mono', monospace" text-anchor="end">249,232 rows</text>
+      <text x="616" y="420" fill="#0b0b0b" font-size="10" font-family="'Geist Mono', monospace">→ publisher_properties</text>
+      <text x="808" y="420" fill="#52514e" font-size="10" font-family="'Geist Mono', monospace" text-anchor="end">hex(32)</text>
+      <text x="616" y="440" fill="#0b0b0b" font-size="10" font-family="'Geist Mono', monospace">bid · won · feedback</text>
+      <text x="808" y="440" fill="#52514e" font-size="10" font-family="'Geist Mono', monospace" text-anchor="end">if bidded</text>
+      <text x="616" y="460" fill="#0b0b0b" font-size="10" font-family="'Geist Mono', monospace">conversion</text>
+      <text x="808" y="460" fill="#52514e" font-size="10" font-family="'Geist Mono', monospace" text-anchor="end">if won</text>
+
+      <!-- Legend -->
+      <line x1="40" y1="496" x2="960" y2="496" stroke="rgba(11,11,11,0.10)" stroke-width="0.8"/>
+      <text x="40" y="512" fill="#52514e" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.18em">LEGEND</text>
+
+      <rect x="40" y="528" width="14" height="10" rx="2" fill="rgba(42,120,214,0.04)" stroke="#2a78d6" stroke-width="1"/>
+      <text x="60" y="536" fill="#52514e" font-size="8.5" font-family="'Geist', sans-serif">The unit Q3 prices</text>
+
+      <rect x="176" y="528" width="14" height="10" rx="2" fill="#ffffff" stroke="#0b0b0b" stroke-width="1"/>
+      <text x="196" y="536" fill="#52514e" font-size="8.5" font-family="'Geist', sans-serif">Hashed entity</text>
+
+      <rect x="288" y="528" width="14" height="10" rx="2" fill="rgba(11,11,11,0.04)" stroke="#52514e" stroke-width="1" stroke-dasharray="3,2"/>
+      <text x="308" y="536" fill="#52514e" font-size="8.5" font-family="'Geist', sans-serif">Fact row</text>
+
+      <text x="380" y="536" fill="#0b0b0b" font-size="10" font-family="'Geist Mono', monospace" font-weight="600">#</text>
+      <text x="396" y="536" fill="#52514e" font-size="8.5" font-family="'Geist', sans-serif">Identifier</text>
+
+      <text x="468" y="536" fill="#0b0b0b" font-size="10" font-family="'Geist Mono', monospace" font-weight="600">→</text>
+      <text x="484" y="536" fill="#52514e" font-size="8.5" font-family="'Geist', sans-serif">Observed dependency (share of keys mapping to one parent)</text>
+
+      <text x="800" y="536" fill="#52514e" font-size="8.5" font-family="'Instrument Serif', serif" font-style="italic">36 million guesses, zero hashes reversed.</text>
+    </svg>

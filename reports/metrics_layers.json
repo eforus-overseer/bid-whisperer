@@ -1,0 +1,1332 @@
+{
+  "users": {
+    "n_rows": 249232,
+    "n_unique_users": 249232,
+    "one_impression_per_user": true,
+    "max_impressions_per_user": 1
+  },
+  "overpay": {
+    "n_won_first_price": 38167,
+    "n_won_below_runner_up_anomalies": 273,
+    "overpay_cpm_median": 0.3309989999999998,
+    "overpay_cpm_mean": 0.9819230610999031,
+    "overpay_ratio_median": 0.4121314923141146,
+    "overpay_ratio_p25": 0.20450695920607836,
+    "overpay_ratio_p75": 0.6434949732576578,
+    "share_paid_over_2x_runner_up": 0.39924542143736735,
+    "first_price_spend_cpm_sum": 79259.66747300001,
+    "runner_up_cpm_sum": 41782.61,
+    "theoretical_max_saving_share": 0.47283894404132665,
+    "n_lost_first_price": 76702,
+    "lost_gap_cpm_median": 0.985333,
+    "share_lost_by_under_10pct": 0.04205887721311048,
+    "share_lost_by_under_25pct": 0.1063727151834372
+  },
+  "shading_curve": [
+    {
+      "shade": 0.0,
+      "win_retained": 0.9811879372232557,
+      "spend_saved": 0.005096227979225487,
+      "cost_per_win_before": 2.076654373490188,
+      "cost_per_win_after": 2.1056835199337764,
+      "impressions_lost": 718
+    },
+    {
+      "shade": 0.05,
+      "win_retained": 0.9309089003589488,
+      "spend_saved": 0.09629206967276127,
+      "cost_per_win_before": 2.076654373490188,
+      "cost_per_win_after": 2.0159749521657755,
+      "impressions_lost": 2637
+    },
+    {
+      "shade": 0.1,
+      "win_retained": 0.8804202583383551,
+      "spend_saved": 0.1844523003251335,
+      "cost_per_win_before": 2.076654373490188,
+      "cost_per_win_after": 1.9236389454691545,
+      "impressions_lost": 4564
+    },
+    {
+      "shade": 0.15,
+      "win_retained": 0.826918542196138,
+      "spend_saved": 0.271227968045326,
+      "cost_per_win_before": 2.076654373490188,
+      "cost_per_win_after": 1.8301773998399922,
+      "impressions_lost": 6606
+    },
+    {
+      "shade": 0.2,
+      "win_retained": 0.7551549768124296,
+      "spend_saved": 0.3587432427859487,
+      "cost_per_win_before": 2.076654373490188,
+      "cost_per_win_after": 1.7634375595586704,
+      "impressions_lost": 9345
+    },
+    {
+      "shade": 0.25,
+      "win_retained": 0.6962559278958262,
+      "spend_saved": 0.43618063412929253,
+      "cost_per_win_before": 2.076654373490188,
+      "cost_per_win_after": 1.6816488091273425,
+      "impressions_lost": 11593
+    },
+    {
+      "shade": 0.3,
+      "win_retained": 0.6344748080802788,
+      "spend_saved": 0.5111286315426504,
+      "cost_per_win_before": 2.076654373490188,
+      "cost_per_win_after": 1.6000901098860256,
+      "impressions_lost": 13951
+    },
+    {
+      "shade": 0.35,
+      "win_retained": 0.570938245080829,
+      "spend_saved": 0.5835871964610103,
+      "cost_per_win_before": 2.076654373490188,
+      "cost_per_win_after": 1.5146042099949522,
+      "impressions_lost": 16376
+    },
+    {
+      "shade": 0.4,
+      "win_retained": 0.513978043859879,
+      "spend_saved": 0.6480887802626525,
+      "cost_per_win_before": 2.076654373490188,
+      "cost_per_win_after": 1.421846676678391,
+      "impressions_lost": 18550
+    },
+    {
+      "shade": 0.45,
+      "win_retained": 0.45662483297089107,
+      "spend_saved": 0.7097310403864959,
+      "cost_per_win_before": 2.076654373490188,
+      "cost_per_win_after": 1.3200953188375029,
+      "impressions_lost": 20739
+    },
+    {
+      "shade": 0.5,
+      "win_retained": 0.39924542143736735,
+      "spend_saved": 0.765107537722864,
+      "cost_per_win_before": 2.076654373490188,
+      "cost_per_win_after": 1.2217809720435753,
+      "impressions_lost": 22929
+    },
+    {
+      "shade": 0.55,
+      "win_retained": 0.3457175046506144,
+      "spend_saved": 0.8148647230629797,
+      "cost_per_win_before": 2.076654373490188,
+      "cost_per_win_after": 1.1120697603296703,
+      "impressions_lost": 24972
+    },
+    {
+      "shade": 0.6,
+      "win_retained": 0.2933948175125108,
+      "spend_saved": 0.8607197894772828,
+      "cost_per_win_before": 2.076654373490188,
+      "cost_per_win_after": 0.9858281096267191,
+      "impressions_lost": 26969
+    },
+    {
+      "shade": 0.65,
+      "win_retained": 0.24371839547252863,
+      "spend_saved": 0.8978502851565957,
+      "cost_per_win_before": 2.076654373490188,
+      "cost_per_win_after": 0.8703883499193723,
+      "impressions_lost": 28865
+    },
+    {
+      "shade": 0.7,
+      "win_retained": 0.19288914507296878,
+      "spend_saved": 0.9288968948321694,
+      "cost_per_win_before": 2.076654373490188,
+      "cost_per_win_after": 0.7654996566014671,
+      "impressions_lost": 30805
+    }
+  ],
+  "oracle_curve": [
+    {
+      "eps": 0.0,
+      "spend_saved": 0.47285023181262975
+    },
+    {
+      "eps": 0.05,
+      "spend_saved": 0.4477916934749996
+    },
+    {
+      "eps": 0.1,
+      "spend_saved": 0.4246628418983197
+    },
+    {
+      "eps": 0.15,
+      "spend_saved": 0.40325962107888
+    },
+    {
+      "eps": 0.2,
+      "spend_saved": 0.38343971085108175
+    },
+    {
+      "eps": 0.25,
+      "spend_saved": 0.365256190191082
+    },
+    {
+      "eps": 0.3,
+      "spend_saved": 0.3484181605153377
+    },
+    {
+      "eps": 0.35,
+      "spend_saved": 0.3327046566904035
+    },
+    {
+      "eps": 0.4,
+      "spend_saved": 0.3179955955352183
+    },
+    {
+      "eps": 0.45,
+      "spend_saved": 0.30431946354325334
+    },
+    {
+      "eps": 0.5,
+      "spend_saved": 0.29157090316928747
+    }
+  ],
+  "hourly": [
+    {
+      "hour": 0,
+      "requests": 14691,
+      "bid_rate": 0.5346130283847254,
+      "win_rate": 0.3919022154316272,
+      "median_cpm": 0.5706344999999999,
+      "ctr": 0.08966861598440545,
+      "served": 3078
+    },
+    {
+      "hour": 1,
+      "requests": 14137,
+      "bid_rate": 0.5582513970432199,
+      "win_rate": 0.42029903699949317,
+      "median_cpm": 0.5886720000000001,
+      "ctr": 0.08893578534820622,
+      "served": 3317
+    },
+    {
+      "hour": 2,
+      "requests": 14237,
+      "bid_rate": 0.5529957153894781,
+      "win_rate": 0.43934967610821796,
+      "median_cpm": 0.60799,
+      "ctr": 0.08528476438276959,
+      "served": 3459
+    },
+    {
+      "hour": 3,
+      "requests": 11088,
+      "bid_rate": 0.5347222222222222,
+      "win_rate": 0.437847866419295,
+      "median_cpm": 0.61991,
+      "ctr": 0.09938366718027734,
+      "served": 2596
+    },
+    {
+      "hour": 4,
+      "requests": 8884,
+      "bid_rate": 0.5136199909950473,
+      "win_rate": 0.4685513916283147,
+      "median_cpm": 0.644814,
+      "ctr": 0.10149672591206735,
+      "served": 2138
+    },
+    {
+      "hour": 5,
+      "requests": 7732,
+      "bid_rate": 0.46934816347646147,
+      "win_rate": 0.3050427114907688,
+      "median_cpm": 0.663629,
+      "ctr": 0.11653116531165311,
+      "served": 1107
+    },
+    {
+      "hour": 6,
+      "requests": 5754,
+      "bid_rate": 0.4268335071254779,
+      "win_rate": 0.31881107491856675,
+      "median_cpm": 0.6392450000000001,
+      "ctr": 0.09195402298850575,
+      "served": 783
+    },
+    {
+      "hour": 7,
+      "requests": 4103,
+      "bid_rate": 0.4255422861320985,
+      "win_rate": 0.3098510882016037,
+      "median_cpm": 0.647969,
+      "ctr": 0.09057301293900184,
+      "served": 541
+    },
+    {
+      "hour": 8,
+      "requests": 3395,
+      "bid_rate": 0.38556701030927837,
+      "win_rate": 0.2857142857142857,
+      "median_cpm": 0.68901,
+      "ctr": 0.12032085561497326,
+      "served": 374
+    },
+    {
+      "hour": 9,
+      "requests": 3225,
+      "bid_rate": 0.3978294573643411,
+      "win_rate": 0.284489477786438,
+      "median_cpm": 0.778461,
+      "ctr": 0.0958904109589041,
+      "served": 365
+    },
+    {
+      "hour": 10,
+      "requests": 3910,
+      "bid_rate": 0.38235294117647056,
+      "win_rate": 0.30434782608695654,
+      "median_cpm": 0.774266,
+      "ctr": 0.11648351648351649,
+      "served": 455
+    },
+    {
+      "hour": 11,
+      "requests": 5697,
+      "bid_rate": 0.4368966122520625,
+      "win_rate": 0.2868621936520691,
+      "median_cpm": 0.741418,
+      "ctr": 0.1092436974789916,
+      "served": 714
+    },
+    {
+      "hour": 12,
+      "requests": 7781,
+      "bid_rate": 0.4496851304459581,
+      "win_rate": 0.29236924835667333,
+      "median_cpm": 0.763668,
+      "ctr": 0.09090909090909091,
+      "served": 1023
+    },
+    {
+      "hour": 13,
+      "requests": 11143,
+      "bid_rate": 0.43668670914475455,
+      "win_rate": 0.32244143033292233,
+      "median_cpm": 0.7386355,
+      "ctr": 0.10261312938177183,
+      "served": 1569
+    },
+    {
+      "hour": 14,
+      "requests": 13457,
+      "bid_rate": 0.44616184885189863,
+      "win_rate": 0.333944037308461,
+      "median_cpm": 0.780036,
+      "ctr": 0.0827930174563591,
+      "served": 2005
+    },
+    {
+      "hour": 15,
+      "requests": 15038,
+      "bid_rate": 0.45810613113445936,
+      "win_rate": 0.3257366816664247,
+      "median_cpm": 0.792184,
+      "ctr": 0.08199643493761141,
+      "served": 2244
+    },
+    {
+      "hour": 16,
+      "requests": 13923,
+      "bid_rate": 0.4795661854485384,
+      "win_rate": 0.359592631421297,
+      "median_cpm": 0.894558,
+      "ctr": 0.09496043315285298,
+      "served": 2401
+    },
+    {
+      "hour": 17,
+      "requests": 16366,
+      "bid_rate": 0.49016253207869975,
+      "win_rate": 0.3668661181750187,
+      "median_cpm": 0.9295585,
+      "ctr": 0.07577302072714917,
+      "served": 2943
+    },
+    {
+      "hour": 18,
+      "requests": 13331,
+      "bid_rate": 0.5215662740979672,
+      "win_rate": 0.37135049618869553,
+      "median_cpm": 0.814518,
+      "ctr": 0.09566227730441518,
+      "served": 2582
+    },
+    {
+      "hour": 19,
+      "requests": 14005,
+      "bid_rate": 0.5038914673330953,
+      "win_rate": 0.38826696896698315,
+      "median_cpm": 0.921677,
+      "ctr": 0.11277372262773723,
+      "served": 2740
+    },
+    {
+      "hour": 20,
+      "requests": 12814,
+      "bid_rate": 0.5377711877633838,
+      "win_rate": 0.3803511827020752,
+      "median_cpm": 0.807599,
+      "ctr": 0.08851583365127814,
+      "served": 2621
+    },
+    {
+      "hour": 21,
+      "requests": 12390,
+      "bid_rate": 0.5425343018563358,
+      "win_rate": 0.38411187146682535,
+      "median_cpm": 0.7751105,
+      "ctr": 0.08985282726568551,
+      "served": 2582
+    },
+    {
+      "hour": 22,
+      "requests": 10790,
+      "bid_rate": 0.5501390176088972,
+      "win_rate": 0.4036388140161725,
+      "median_cpm": 0.7915995,
+      "ctr": 0.10392320534223706,
+      "served": 2396
+    },
+    {
+      "hour": 23,
+      "requests": 11341,
+      "bid_rate": 0.5394586015342563,
+      "win_rate": 0.41337038247793395,
+      "median_cpm": 0.8596554999999999,
+      "ctr": 0.09568999604586793,
+      "served": 2529
+    }
+  ],
+  "concentration": [
+    {
+      "column": "domain",
+      "n_unique": 8635,
+      "gini": 0.9182378791519532,
+      "top_10_share": 0.23611077673720618,
+      "top_50_share": 0.49989567534166324,
+      "top_100_share": 0.6358347176412997,
+      "top_500_share": 0.8646387558080747
+    },
+    {
+      "column": "url",
+      "n_unique": 44208,
+      "gini": 0.7860390554455747,
+      "top_10_share": 0.13329748988893883,
+      "top_50_share": 0.2672209026128266,
+      "top_100_share": 0.3420347306926879,
+      "top_500_share": 0.5453593439044745
+    },
+    {
+      "column": "ad_slot",
+      "n_unique": 35255,
+      "gini": 0.8138602101070742,
+      "top_10_share": 0.0852859985876613,
+      "top_50_share": 0.21390110419207806,
+      "top_100_share": 0.2926189253386403,
+      "top_500_share": 0.5464025486293895
+    }
+  ],
+  "browser": [
+    {
+      "browser": "Chrome",
+      "n": 136591,
+      "share": 0.548047602234063,
+      "served": 25245,
+      "ctr": 0.09898989898989899
+    },
+    {
+      "browser": "Safari",
+      "n": 36819,
+      "share": 0.1477298260255505,
+      "served": 6379,
+      "ctr": 0.09891832575638815
+    },
+    {
+      "browser": "Other",
+      "n": 31979,
+      "share": 0.1283101688386724,
+      "served": 6281,
+      "ctr": 0.09313803534469034
+    },
+    {
+      "browser": "Edge",
+      "n": 31681,
+      "share": 0.1271144957308853,
+      "served": 6571,
+      "ctr": 0.08065743418049003
+    },
+    {
+      "browser": "Firefox",
+      "n": 11784,
+      "share": 0.04728124799383707,
+      "served": 2024,
+      "ctr": 0.05731225296442688
+    },
+    {
+      "browser": "Opera",
+      "n": 378,
+      "share": 0.0015166591769917187,
+      "served": 62,
+      "ctr": 0.11290322580645161
+    }
+  ],
+  "os": [
+    {
+      "os": "Windows",
+      "n": 101019,
+      "share": 0.4053211465622392,
+      "served": 19518,
+      "ctr": 0.06973050517471052
+    },
+    {
+      "os": "Android",
+      "n": 60432,
+      "share": 0.2424728766771522,
+      "served": 10919,
+      "ctr": 0.14113014012272185
+    },
+    {
+      "os": "iOS",
+      "n": 51354,
+      "share": 0.20604898247416062,
+      "served": 10542,
+      "ctr": 0.09741984443179662
+    },
+    {
+      "os": "macOS",
+      "n": 31685,
+      "share": 0.1271305450343455,
+      "served": 5087,
+      "ctr": 0.08059760172989974
+    },
+    {
+      "os": "ChromeOS",
+      "n": 3764,
+      "share": 0.015102394556076267,
+      "served": 332,
+      "ctr": 0.06927710843373494
+    },
+    {
+      "os": "Linux",
+      "n": 867,
+      "share": 0.0034786865250048147,
+      "served": 147,
+      "ctr": 0.034013605442176874
+    },
+    {
+      "os": "Other",
+      "n": 111,
+      "share": 0.0004453681710213777,
+      "served": 17,
+      "ctr": 0.058823529411764705
+    }
+  ],
+  "cookie_age": [
+    {
+      "cookie_age": "new (0)",
+      "served": 23232,
+      "clicks": 2090.0,
+      "ctr": 0.08996212121212122
+    },
+    {
+      "cookie_age": "under 1 day",
+      "served": 1613,
+      "clicks": 118.0,
+      "ctr": 0.0731556106633602
+    },
+    {
+      "cookie_age": "1 to 7 days",
+      "served": 1612,
+      "clicks": 129.0,
+      "ctr": 0.08002481389578164
+    },
+    {
+      "cookie_age": "7 to 30 days",
+      "served": 4524,
+      "clicks": 426.0,
+      "ctr": 0.09416445623342175
+    },
+    {
+      "cookie_age": "30 to 90 days",
+      "served": 3160,
+      "clicks": 307.0,
+      "ctr": 0.09715189873417722
+    },
+    {
+      "cookie_age": "90 to 365 days",
+      "served": 8720,
+      "clicks": 910.0,
+      "ctr": 0.10435779816513761
+    },
+    {
+      "cookie_age": "over 1 year",
+      "served": 3701,
+      "clicks": 388.0,
+      "ctr": 0.1048365306673872
+    }
+  ],
+  "archetypes": {
+    "n_domains": 294,
+    "best_k": 3,
+    "silhouette": [
+      {
+        "k": 3,
+        "silhouette": 0.22699223584711242
+      },
+      {
+        "k": 4,
+        "silhouette": 0.22197904178983682
+      },
+      {
+        "k": 5,
+        "silhouette": 0.22617858500429258
+      },
+      {
+        "k": 6,
+        "silhouette": 0.1934754573065627
+      }
+    ],
+    "centroids": [
+      {
+        "mobile_share": 0.8882718830471155,
+        "non_en_share": 0.023076898612439518,
+        "viewability_mean": 61.82656203511952,
+        "session_depth_median": 4.43157894736842,
+        "second_price_share": 0.018321416902713536,
+        "wifi_share": 0.8429291185124069,
+        "median_bid": 1.2338835263157892,
+        "win_rate": 0.36075843427269355,
+        "ctr": 0.1291689392389574,
+        "peak_sin": -0.13431574961226264,
+        "peak_cos": 0.13613794897952097,
+        "archetype": "mobile, more cellular",
+        "n_domains": 95,
+        "impressions": 108878
+      },
+      {
+        "mobile_share": 0.038409199309095865,
+        "non_en_share": 0.0071907635729705,
+        "viewability_mean": 59.52588422846122,
+        "session_depth_median": 27.696629213483146,
+        "second_price_share": 0.028112848131276805,
+        "wifi_share": 0.9945679323369206,
+        "median_bid": 1.1096358089887641,
+        "win_rate": 0.381284002999683,
+        "ctr": 0.06860341828835433,
+        "peak_sin": -0.4798092370036686,
+        "peak_cos": 0.12487405854530925,
+        "archetype": "desktop, low CTR",
+        "n_domains": 178,
+        "impressions": 84462
+      },
+      {
+        "mobile_share": 0.3077242000680929,
+        "non_en_share": 0.01666453614283448,
+        "viewability_mean": 65.74636084939499,
+        "session_depth_median": 3.380952380952385,
+        "second_price_share": 0.9633175383175386,
+        "wifi_share": 0.9266022544633287,
+        "median_bid": 24.07108540476191,
+        "win_rate": 0.8826841578033282,
+        "ctr": 0.14195627752791948,
+        "peak_sin": -0.2660593414213671,
+        "peak_cos": 0.24198286323082968,
+        "archetype": "second-price, premium CPM",
+        "n_domains": 21,
+        "impressions": 7882
+      }
+    ],
+    "desktop_only_domains": 172,
+    "mobile_only_domains": 56
+  },
+  "states": [
+    {
+      "state_code": "CA",
+      "impressions": 22710,
+      "bid_rate": 0.48269484808454427,
+      "bidded": 10962,
+      "win_rate": 0.32256887429301223,
+      "median_bid": 0.608077,
+      "served": 3536,
+      "clicks": 357.0,
+      "ctr": 0.10096153846153846
+    },
+    {
+      "state_code": "FL",
+      "impressions": 19272,
+      "bid_rate": 0.503217102532171,
+      "bidded": 9698,
+      "win_rate": 0.34233862652093217,
+      "median_bid": 0.746456,
+      "served": 3320,
+      "clicks": 325.0,
+      "ctr": 0.09789156626506024
+    },
+    {
+      "state_code": "TX",
+      "impressions": 18246,
+      "bid_rate": 0.5056450728926888,
+      "bidded": 9226,
+      "win_rate": 0.3802297853891177,
+      "median_bid": 0.7580065,
+      "served": 3508,
+      "clicks": 357.0,
+      "ctr": 0.10176738882554162
+    },
+    {
+      "state_code": "NY",
+      "impressions": 15189,
+      "bid_rate": 0.4927908354730397,
+      "bidded": 7485,
+      "win_rate": 0.36245824983299935,
+      "median_bid": 0.702111,
+      "served": 2713,
+      "clicks": 274.0,
+      "ctr": 0.10099520825654257
+    },
+    {
+      "state_code": "PA",
+      "impressions": 10932,
+      "bid_rate": 0.49405415294548116,
+      "bidded": 5401,
+      "win_rate": 0.38289205702647655,
+      "median_bid": 0.760442,
+      "served": 2068,
+      "clicks": 198.0,
+      "ctr": 0.09574468085106383
+    },
+    {
+      "state_code": "IL",
+      "impressions": 9688,
+      "bid_rate": 0.5157927332782825,
+      "bidded": 4997,
+      "win_rate": 0.3594156493896338,
+      "median_bid": 0.679913,
+      "served": 1796,
+      "clicks": 153.0,
+      "ctr": 0.08518930957683742
+    },
+    {
+      "state_code": "OH",
+      "impressions": 9114,
+      "bid_rate": 0.5051569014702655,
+      "bidded": 4604,
+      "win_rate": 0.42028670721112077,
+      "median_bid": 0.8073325,
+      "served": 1935,
+      "clicks": 189.0,
+      "ctr": 0.09767441860465116
+    },
+    {
+      "state_code": "GA",
+      "impressions": 8690,
+      "bid_rate": 0.5071346375143844,
+      "bidded": 4407,
+      "win_rate": 0.37485818016791467,
+      "median_bid": 0.790447,
+      "served": 1652,
+      "clicks": 168.0,
+      "ctr": 0.1016949152542373
+    },
+    {
+      "state_code": "NC",
+      "impressions": 7880,
+      "bid_rate": 0.4854060913705584,
+      "bidded": 3825,
+      "win_rate": 0.37516339869281046,
+      "median_bid": 0.768,
+      "served": 1435,
+      "clicks": 124.0,
+      "ctr": 0.08641114982578398
+    },
+    {
+      "state_code": "NJ",
+      "impressions": 7787,
+      "bid_rate": 0.4953127006549377,
+      "bidded": 3857,
+      "win_rate": 0.3404200155561317,
+      "median_bid": 0.624368,
+      "served": 1313,
+      "clicks": 112.0,
+      "ctr": 0.0853008377760853
+    },
+    {
+      "state_code": "MI",
+      "impressions": 7756,
+      "bid_rate": 0.5096699329551315,
+      "bidded": 3953,
+      "win_rate": 0.3736402732102201,
+      "median_bid": 0.822826,
+      "served": 1477,
+      "clicks": 161.0,
+      "ctr": 0.10900473933649289
+    },
+    {
+      "state_code": "VA",
+      "impressions": 7304,
+      "bid_rate": 0.4856243154435925,
+      "bidded": 3547,
+      "win_rate": 0.3746828305610375,
+      "median_bid": 0.816351,
+      "served": 1329,
+      "clicks": 121.0,
+      "ctr": 0.09104589917231001
+    },
+    {
+      "state_code": "MA",
+      "impressions": 6428,
+      "bid_rate": 0.4992221530802738,
+      "bidded": 3209,
+      "win_rate": 0.3702087877843565,
+      "median_bid": 0.712724,
+      "served": 1188,
+      "clicks": 85.0,
+      "ctr": 0.07154882154882154
+    },
+    {
+      "state_code": "WA",
+      "impressions": 6043,
+      "bid_rate": 0.49230514645043855,
+      "bidded": 2975,
+      "win_rate": 0.387563025210084,
+      "median_bid": 0.800747,
+      "served": 1153,
+      "clicks": 102.0,
+      "ctr": 0.08846487424111014
+    },
+    {
+      "state_code": "AZ",
+      "impressions": 5445,
+      "bid_rate": 0.5015610651974288,
+      "bidded": 2731,
+      "win_rate": 0.36543390699377515,
+      "median_bid": 0.763224,
+      "served": 998,
+      "clicks": 82.0,
+      "ctr": 0.08216432865731463
+    },
+    {
+      "state_code": "TN",
+      "impressions": 5146,
+      "bid_rate": 0.497085114652157,
+      "bidded": 2558,
+      "win_rate": 0.3608287724784988,
+      "median_bid": 0.7843285,
+      "served": 923,
+      "clicks": 101.0,
+      "ctr": 0.1094257854821235
+    },
+    {
+      "state_code": "MD",
+      "impressions": 5129,
+      "bid_rate": 0.4977578475336323,
+      "bidded": 2553,
+      "win_rate": 0.36741088915001957,
+      "median_bid": 0.741665,
+      "served": 938,
+      "clicks": 115.0,
+      "ctr": 0.12260127931769722
+    },
+    {
+      "state_code": "CO",
+      "impressions": 4978,
+      "bid_rate": 0.5285255122539172,
+      "bidded": 2631,
+      "win_rate": 0.4222729000380084,
+      "median_bid": 0.688982,
+      "served": 1111,
+      "clicks": 101.0,
+      "ctr": 0.09090909090909091
+    },
+    {
+      "state_code": "IN",
+      "impressions": 4451,
+      "bid_rate": 0.5003370029206919,
+      "bidded": 2227,
+      "win_rate": 0.36012572968118545,
+      "median_bid": 0.7168,
+      "served": 802,
+      "clicks": 80.0,
+      "ctr": 0.09975062344139651
+    },
+    {
+      "state_code": "MO",
+      "impressions": 4300,
+      "bid_rate": 0.5223255813953488,
+      "bidded": 2246,
+      "win_rate": 0.41095280498664294,
+      "median_bid": 0.7488250000000001,
+      "served": 923,
+      "clicks": 89.0,
+      "ctr": 0.09642470205850487
+    },
+    {
+      "state_code": "MN",
+      "impressions": 4144,
+      "bid_rate": 0.5106177606177607,
+      "bidded": 2116,
+      "win_rate": 0.41351606805293006,
+      "median_bid": 0.7777689999999999,
+      "served": 875,
+      "clicks": 77.0,
+      "ctr": 0.088
+    },
+    {
+      "state_code": "WI",
+      "impressions": 3922,
+      "bid_rate": 0.4806221315655278,
+      "bidded": 1885,
+      "win_rate": 0.4042440318302387,
+      "median_bid": 0.786257,
+      "served": 762,
+      "clicks": 61.0,
+      "ctr": 0.08005249343832022
+    },
+    {
+      "state_code": "SC",
+      "impressions": 3476,
+      "bid_rate": 0.487054085155351,
+      "bidded": 1693,
+      "win_rate": 0.37152982870643825,
+      "median_bid": 0.7714,
+      "served": 629,
+      "clicks": 65.0,
+      "ctr": 0.10333863275039745
+    },
+    {
+      "state_code": "OR",
+      "impressions": 3217,
+      "bid_rate": 0.4898974199564812,
+      "bidded": 1576,
+      "win_rate": 0.37944162436548223,
+      "median_bid": 0.7783855,
+      "served": 598,
+      "clicks": 57.0,
+      "ctr": 0.09531772575250837
+    },
+    {
+      "state_code": "AL",
+      "impressions": 3162,
+      "bid_rate": 0.5031625553447185,
+      "bidded": 1591,
+      "win_rate": 0.3846637335009428,
+      "median_bid": 0.774383,
+      "served": 612,
+      "clicks": 70.0,
+      "ctr": 0.11437908496732026
+    },
+    {
+      "state_code": "CT",
+      "impressions": 3067,
+      "bid_rate": 0.5096185197261167,
+      "bidded": 1563,
+      "win_rate": 0.35892514395393477,
+      "median_bid": 0.645698,
+      "served": 561,
+      "clicks": 49.0,
+      "ctr": 0.0873440285204991
+    },
+    {
+      "state_code": "KY",
+      "impressions": 2692,
+      "bid_rate": 0.4736255572065379,
+      "bidded": 1275,
+      "win_rate": 0.4054901960784314,
+      "median_bid": 0.804,
+      "served": 517,
+      "clicks": 62.0,
+      "ctr": 0.11992263056092843
+    },
+    {
+      "state_code": "LA",
+      "impressions": 2595,
+      "bid_rate": 0.5136801541425818,
+      "bidded": 1333,
+      "win_rate": 0.4253563390847712,
+      "median_bid": 0.6836,
+      "served": 567,
+      "clicks": 37.0,
+      "ctr": 0.06525573192239859
+    },
+    {
+      "state_code": "IA",
+      "impressions": 2570,
+      "bid_rate": 0.5206225680933853,
+      "bidded": 1338,
+      "win_rate": 0.3744394618834081,
+      "median_bid": 0.7233345,
+      "served": 501,
+      "clicks": 55.0,
+      "ctr": 0.10978043912175649
+    },
+    {
+      "state_code": "UT",
+      "impressions": 2283,
+      "bid_rate": 0.5194918966272448,
+      "bidded": 1186,
+      "win_rate": 0.403035413153457,
+      "median_bid": 0.975832,
+      "served": 478,
+      "clicks": 34.0,
+      "ctr": 0.07112970711297072
+    },
+    {
+      "state_code": "OK",
+      "impressions": 2149,
+      "bid_rate": 0.5067473243369008,
+      "bidded": 1089,
+      "win_rate": 0.43342516069788795,
+      "median_bid": 0.741188,
+      "served": 472,
+      "clicks": 44.0,
+      "ctr": 0.09322033898305085
+    },
+    {
+      "state_code": "NV",
+      "impressions": 2131,
+      "bid_rate": 0.5147817925856405,
+      "bidded": 1097,
+      "win_rate": 0.37465815861440294,
+      "median_bid": 0.653452,
+      "served": 411,
+      "clicks": 41.0,
+      "ctr": 0.09975669099756691
+    },
+    {
+      "state_code": "KS",
+      "impressions": 1885,
+      "bid_rate": 0.5018567639257294,
+      "bidded": 946,
+      "win_rate": 0.4059196617336152,
+      "median_bid": 0.8461725,
+      "served": 384,
+      "clicks": 36.0,
+      "ctr": 0.09375
+    },
+    {
+      "state_code": "AR",
+      "impressions": 1594,
+      "bid_rate": 0.5050188205771644,
+      "bidded": 805,
+      "win_rate": 0.4124223602484472,
+      "median_bid": 0.819746,
+      "served": 332,
+      "clicks": 25.0,
+      "ctr": 0.07530120481927711
+    },
+    {
+      "state_code": "MS",
+      "impressions": 1391,
+      "bid_rate": 0.5061107117181883,
+      "bidded": 704,
+      "win_rate": 0.42045454545454547,
+      "median_bid": 0.7379235,
+      "served": 296,
+      "clicks": 26.0,
+      "ctr": 0.08783783783783784
+    },
+    {
+      "state_code": "NE",
+      "impressions": 1314,
+      "bid_rate": 0.515220700152207,
+      "bidded": 677,
+      "win_rate": 0.43722304283604135,
+      "median_bid": 0.88,
+      "served": 296,
+      "clicks": 29.0,
+      "ctr": 0.09797297297297297
+    },
+    {
+      "state_code": "NH",
+      "impressions": 1276,
+      "bid_rate": 0.48510971786833856,
+      "bidded": 619,
+      "win_rate": 0.3570274636510501,
+      "median_bid": 0.7854,
+      "served": 221,
+      "clicks": 18.0,
+      "ctr": 0.08144796380090498
+    },
+    {
+      "state_code": "WV",
+      "impressions": 1175,
+      "bid_rate": 0.5225531914893617,
+      "bidded": 614,
+      "win_rate": 0.3925081433224756,
+      "median_bid": 0.712495,
+      "served": 241,
+      "clicks": 23.0,
+      "ctr": 0.0954356846473029
+    },
+    {
+      "state_code": "RI",
+      "impressions": 1169,
+      "bid_rate": 0.5064157399486741,
+      "bidded": 592,
+      "win_rate": 0.36317567567567566,
+      "median_bid": 0.7194025,
+      "served": 215,
+      "clicks": 17.0,
+      "ctr": 0.07906976744186046
+    },
+    {
+      "state_code": "NM",
+      "impressions": 1162,
+      "bid_rate": 0.5120481927710844,
+      "bidded": 595,
+      "win_rate": 0.3630252100840336,
+      "median_bid": 0.7703,
+      "served": 216,
+      "clicks": 18.0,
+      "ctr": 0.08333333333333333
+    },
+    {
+      "state_code": "ID",
+      "impressions": 1128,
+      "bid_rate": 0.500886524822695,
+      "bidded": 565,
+      "win_rate": 0.3769911504424779,
+      "median_bid": 0.846879,
+      "served": 213,
+      "clicks": 11.0,
+      "ctr": 0.051643192488262914
+    },
+    {
+      "state_code": "DE",
+      "impressions": 964,
+      "bid_rate": 0.49377593360995853,
+      "bidded": 476,
+      "win_rate": 0.3634453781512605,
+      "median_bid": 0.790361,
+      "served": 173,
+      "clicks": 19.0,
+      "ctr": 0.10982658959537572
+    },
+    {
+      "state_code": "ME",
+      "impressions": 964,
+      "bid_rate": 0.5020746887966805,
+      "bidded": 484,
+      "win_rate": 0.3884297520661157,
+      "median_bid": 0.7689375,
+      "served": 188,
+      "clicks": 11.0,
+      "ctr": 0.05851063829787234
+    },
+    {
+      "state_code": "HI",
+      "impressions": 870,
+      "bid_rate": 0.5114942528735632,
+      "bidded": 445,
+      "win_rate": 0.3707865168539326,
+      "median_bid": 0.536,
+      "served": 165,
+      "clicks": 14.0,
+      "ctr": 0.08484848484848485
+    },
+    {
+      "state_code": "DC",
+      "impressions": 861,
+      "bid_rate": 0.5005807200929152,
+      "bidded": 431,
+      "win_rate": 0.31554524361948955,
+      "median_bid": 0.944952,
+      "served": 136,
+      "clicks": 14.0,
+      "ctr": 0.10294117647058823
+    },
+    {
+      "state_code": "MT",
+      "impressions": 739,
+      "bid_rate": 0.4817320703653586,
+      "bidded": 356,
+      "win_rate": 0.3960674157303371,
+      "median_bid": 0.7864085000000001,
+      "served": 141,
+      "clicks": 16.0,
+      "ctr": 0.11347517730496454
+    },
+    {
+      "state_code": "ND",
+      "impressions": 539,
+      "bid_rate": 0.5102040816326531,
+      "bidded": 275,
+      "win_rate": 0.4254545454545455,
+      "median_bid": 0.7104,
+      "served": 117,
+      "clicks": 9.0,
+      "ctr": 0.07692307692307693
+    },
+    {
+      "state_code": "VT",
+      "impressions": 505,
+      "bid_rate": 0.5148514851485149,
+      "bidded": 260,
+      "win_rate": 0.4230769230769231,
+      "median_bid": 0.8048379999999999,
+      "served": 110,
+      "clicks": 7.0,
+      "ctr": 0.06363636363636363
+    },
+    {
+      "state_code": "SD",
+      "impressions": 500,
+      "bid_rate": 0.472,
+      "bidded": 236,
+      "win_rate": 0.5,
+      "median_bid": 1.245217,
+      "served": 118,
+      "clicks": 12.0,
+      "ctr": 0.1016949152542373
+    },
+    {
+      "state_code": "AK",
+      "impressions": 452,
+      "bid_rate": 0.5,
+      "bidded": 226,
+      "win_rate": 0.39823008849557523,
+      "median_bid": 0.615507,
+      "served": 90,
+      "clicks": 8.0,
+      "ctr": 0.08888888888888889
+    },
+    {
+      "state_code": "WY",
+      "impressions": 389,
+      "bid_rate": 0.5372750642673522,
+      "bidded": 209,
+      "win_rate": 0.41148325358851673,
+      "median_bid": 0.623999,
+      "served": 86,
+      "clicks": 9.0,
+      "ctr": 0.10465116279069768
+    }
+  ],
+  "states_unknown_codes": [],
+  "decode": {
+    "format": [
+      {
+        "column": "domain",
+        "n_distinct": 8635,
+        "lengths": "32",
+        "share_32_lower_hex": 1.0,
+        "first_digit_max_share": 0.06878980891719745,
+        "first_digit_min_share": 0.05639837869137232,
+        "reads_as": "32-hex digest (MD5-shaped)"
+      },
+      {
+        "column": "url",
+        "n_distinct": 44208,
+        "lengths": "32",
+        "share_32_lower_hex": 1.0,
+        "first_digit_max_share": 0.06458107129931234,
+        "first_digit_min_share": 0.05946887441187115,
+        "reads_as": "32-hex digest (MD5-shaped)"
+      },
+      {
+        "column": "ad_slot",
+        "n_distinct": 35255,
+        "lengths": "32",
+        "share_32_lower_hex": 1.0,
+        "first_digit_max_share": 0.06492696071479223,
+        "first_digit_min_share": 0.05908381789817047,
+        "reads_as": "32-hex digest (MD5-shaped)"
+      },
+      {
+        "column": "publisher_properties",
+        "n_distinct": 6802,
+        "lengths": "32",
+        "share_32_lower_hex": 1.0,
+        "first_digit_max_share": 0.06689209056159953,
+        "first_digit_min_share": 0.05924728021170244,
+        "reads_as": "32-hex digest (MD5-shaped)"
+      },
+      {
+        "column": "user_id",
+        "n_distinct": 249232,
+        "lengths": "36",
+        "share_32_lower_hex": 0.0,
+        "first_digit_max_share": NaN,
+        "first_digit_min_share": NaN,
+        "reads_as": "UUID v4 (100.0% match)"
+      }
+    ],
+    "functional_dependency": {
+      "domain": {
+        "domain": 1.0,
+        "url": 1.0,
+        "ad_slot": 0.9814,
+        "publisher_properties": 0.8697
+      },
+      "url": {
+        "domain": 0.6233,
+        "url": 1.0,
+        "ad_slot": 0.7855,
+        "publisher_properties": 0.643
+      },
+      "ad_slot": {
+        "domain": 0.5702,
+        "url": 0.7979,
+        "ad_slot": 1.0,
+        "publisher_properties": 0.6872
+      },
+      "publisher_properties": {
+        "domain": 0.791,
+        "url": 0.9338,
+        "ad_slot": 0.9637,
+        "publisher_properties": 1.0
+      }
+    },
+    "chained": [
+      {
+        "test": "md5(url) found in domain",
+        "n_tried": 20000,
+        "hits": 0
+      },
+      {
+        "test": "md5(ad_slot) found in url",
+        "n_tried": 20000,
+        "hits": 0
+      },
+      {
+        "test": "md5(domain) found in publisher_properties",
+        "n_tried": 8635,
+        "hits": 0
+      },
+      {
+        "test": "md5(ad_slot) found in domain",
+        "n_tried": 20000,
+        "hits": 0
+      },
+      {
+        "test": "md5(publisher_properties) found in domain",
+        "n_tried": 6802,
+        "hits": 0
+      }
+    ],
+    "integer_bruteforce": {
+      "n": 1000000,
+      "hits": 0,
+      "seconds": 0.4
+    },
+    "dictionary": {
+      "status": "ran",
+      "wordlist": "/tmp/top-1m.csv",
+      "n_words": 1000000,
+      "digests": 36000000,
+      "hits": 0,
+      "seconds": 16.349251985549927
+    }
+  }
+}

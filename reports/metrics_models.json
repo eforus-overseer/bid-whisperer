@@ -1,0 +1,235 @@
+{
+  "ctr": {
+    "n_rows": 46562,
+    "base_rate": 0.09381040333319016,
+    "pooled_oof_metrics": {
+      "hgb_full": {
+        "roc_auc": 0.7796,
+        "average_precision": 0.25713,
+        "log_loss": 0.26549,
+        "brier": 0.07719
+      },
+      "hgb_no_id": {
+        "roc_auc": 0.68664,
+        "average_precision": 0.16705,
+        "log_loss": 0.28939,
+        "brier": 0.08209
+      },
+      "logreg": {
+        "roc_auc": 0.67547,
+        "average_precision": 0.15765,
+        "log_loss": 0.29274,
+        "brier": 0.08242
+      }
+    },
+    "fold_summary": {
+      "hgb_full": {
+        "roc_auc_mean": 0.77976,
+        "roc_auc_std": 0.0054,
+        "average_precision_mean": 0.25906,
+        "average_precision_std": 0.0113
+      },
+      "hgb_no_id": {
+        "roc_auc_mean": 0.68673,
+        "roc_auc_std": 0.00748,
+        "average_precision_mean": 0.16809,
+        "average_precision_std": 0.00562
+      },
+      "logreg": {
+        "roc_auc_mean": 0.67558,
+        "roc_auc_std": 0.00719,
+        "average_precision_mean": 0.15881,
+        "average_precision_std": 0.00619
+      }
+    },
+    "id_encoding_lift": {
+      "roc_auc": 0.09295801783181501,
+      "average_precision": 0.09007416258815307
+    },
+    "permutation_importance": [
+      {
+        "feature": "viewability_est",
+        "importance_mean": 0.06971,
+        "importance_std": 0.01238
+      },
+      {
+        "feature": "te_ad_slot",
+        "importance_mean": 0.06769,
+        "importance_std": 0.00288
+      },
+      {
+        "feature": "te_url",
+        "importance_mean": 0.0285,
+        "importance_std": 0.00457
+      },
+      {
+        "feature": "te_publisher_properties",
+        "importance_mean": 0.02765,
+        "importance_std": 0.00436
+      },
+      {
+        "feature": "te_domain",
+        "importance_mean": 0.01042,
+        "importance_std": 0.00316
+      },
+      {
+        "feature": "session_depth_est",
+        "importance_mean": 0.00489,
+        "importance_std": 0.00234
+      },
+      {
+        "feature": "device_brand",
+        "importance_mean": 0.00303,
+        "importance_std": 0.00052
+      },
+      {
+        "feature": "hour",
+        "importance_mean": 0.00267,
+        "importance_std": 0.00154
+      },
+      {
+        "feature": "browser",
+        "importance_mean": 0.00223,
+        "importance_std": 0.00066
+      },
+      {
+        "feature": "os",
+        "importance_mean": 0.00085,
+        "importance_std": 0.00057
+      },
+      {
+        "feature": "auction_type",
+        "importance_mean": 0.00057,
+        "importance_std": 0.00056
+      },
+      {
+        "feature": "log_cookie_age",
+        "importance_mean": 0.00046,
+        "importance_std": 0.00022
+      },
+      {
+        "feature": "device_type",
+        "importance_mean": 0.00014,
+        "importance_std": 5e-05
+      },
+      {
+        "feature": "is_wifi",
+        "importance_mean": 5e-05,
+        "importance_std": 3e-05
+      },
+      {
+        "feature": "viewability_missing",
+        "importance_mean": 0.0,
+        "importance_std": 0.0
+      },
+      {
+        "feature": "session_depth_missing",
+        "importance_mean": 0.0,
+        "importance_std": 0.0
+      },
+      {
+        "feature": "state_code",
+        "importance_mean": -0.00044,
+        "importance_std": 0.00134
+      }
+    ],
+    "runtime_s": 12.6
+  },
+  "quantile_regression": {
+    "split": {
+      "n_train_rows": 100177,
+      "n_test_rows": 23973,
+      "n_train_pairs": 11053,
+      "n_test_pairs": 2764,
+      "test_key_seen_in_train": {
+        "url": 0.6401368205898302,
+        "ad_slot": 0.5930421724439995,
+        "domain": 0.8671422016435156
+      }
+    },
+    "table": [
+      {
+        "model": "quantile_regression",
+        "quantile": 0.2,
+        "coverage": 0.27815,
+        "pinball_cpm": 0.96139,
+        "pinball_log": 0.13915,
+        "median_bid_cpm": 0.81475,
+        "coverage_gap": 0.07815
+      },
+      {
+        "model": "hierarchical_lookup",
+        "quantile": 0.2,
+        "coverage": 0.25512,
+        "pinball_cpm": 0.96824,
+        "pinball_log": 0.14689,
+        "median_bid_cpm": 0.5274,
+        "coverage_gap": 0.05512
+      },
+      {
+        "model": "quantile_regression",
+        "quantile": 0.5,
+        "coverage": 0.54069,
+        "pinball_cpm": 2.01445,
+        "pinball_log": 0.21859,
+        "median_bid_cpm": 1.61298,
+        "coverage_gap": 0.04069
+      },
+      {
+        "model": "hierarchical_lookup",
+        "quantile": 0.5,
+        "coverage": 0.52163,
+        "pinball_cpm": 2.12159,
+        "pinball_log": 0.24919,
+        "median_bid_cpm": 1.31,
+        "coverage_gap": 0.02163
+      },
+      {
+        "model": "quantile_regression",
+        "quantile": 0.8,
+        "coverage": 0.80428,
+        "pinball_cpm": 2.46784,
+        "pinball_log": 0.17707,
+        "median_bid_cpm": 3.15238,
+        "coverage_gap": 0.00428
+      },
+      {
+        "model": "hierarchical_lookup",
+        "quantile": 0.8,
+        "coverage": 0.79806,
+        "pinball_cpm": 2.49493,
+        "pinball_log": 0.19756,
+        "median_bid_cpm": 3.25435,
+        "coverage_gap": -0.00194
+      }
+    ],
+    "by_auction_type_at_q50": [
+      {
+        "model": "quantile_regression",
+        "auction_type": "FIRST_PRICE",
+        "n": 21931,
+        "coverage_at_50": 0.5458
+      },
+      {
+        "model": "quantile_regression",
+        "auction_type": "SECOND_PRICE",
+        "n": 2042,
+        "coverage_at_50": 0.4858
+      },
+      {
+        "model": "hierarchical_lookup",
+        "auction_type": "FIRST_PRICE",
+        "n": 21931,
+        "coverage_at_50": 0.52031
+      },
+      {
+        "model": "hierarchical_lookup",
+        "auction_type": "SECOND_PRICE",
+        "n": 2042,
+        "coverage_at_50": 0.53575
+      }
+    ],
+    "runtime_s": 19.0
+  },
+  "total_runtime_s": 33.6
+}

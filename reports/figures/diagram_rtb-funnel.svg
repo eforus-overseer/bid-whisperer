@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rtb-funnel-title rtb-funnel-desc">
+      <title id="rtb-funnel-title">Where 249,232 ad opportunities go in one day</title>
+      <desc id="rtb-funnel-desc">Sankey diagram showing 249,232 ad requests splitting into 124,152 auctions we entered and 125,080 we skipped, with the entered auctions splitting into 46,562 wins and 77,590 losses; the won impressions, which produced 4,368 clicks, are the one highlighted flow.</desc><defs><style>@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap');</style></defs>
+
+      <rect width="100%" height="100%" fill="#fcfcfb"/>
+
+      <!-- Column headers -->
+      <text x="170" y="76" fill="#52514e" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.14em">OPPORTUNITIES</text>
+      <text x="506" y="76" fill="#52514e" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.14em">AUCTION</text>
+      <text x="842" y="76" fill="#52514e" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.14em">OUTCOME</text>
+
+      <!-- Scale: k = 320 px / 249,232 requests. Heights rounded to 4 px; every column sums to 320. -->
+
+      <!-- Ribbon: requests -> bidded (160 px = 124,152) -->
+      <path d="M176,120 C338,120 338,120 500,120 L500,280 C338,280 338,280 176,280 Z" fill="rgba(82,81,78,0.18)"/>
+
+      <!-- Ribbon: requests -> skipped. Skipped opportunities never enter an auction, so the band
+           bypasses the auction column and lands in the outcome column (160 px = 125,080). -->
+      <path d="M176,280 C506,280 506,328 836,328 L836,488 C506,488 506,440 176,440 Z" fill="rgba(82,81,78,0.18)"/>
+
+      <!-- Ribbon: bidded -> lost (100 px = 77,590) -->
+      <path d="M512,180 C674,180 674,204 836,204 L836,304 C674,304 674,280 512,280 Z" fill="rgba(82,81,78,0.18)"/>
+
+      <!-- Ribbon: bidded -> won, the one accent flow (60 px = 46,562) -->
+      <path d="M512,120 C674,120 674,120 836,120 L836,180 C674,180 674,180 512,180 Z" fill="rgba(42,120,214,0.28)"/>
+
+      <!-- Nodes -->
+      <rect x="164" y="120" width="12" height="320" fill="#0b0b0b"/>
+      <rect x="500" y="120" width="12" height="160" fill="#0b0b0b"/>
+      <rect x="836" y="120" width="12" height="60" fill="#0b0b0b"/>
+      <rect x="836" y="204" width="12" height="100" fill="#0b0b0b"/>
+      <rect x="836" y="328" width="12" height="160" fill="#0b0b0b"/>
+
+      <!-- Labels: column 1, outside, anchored end -->
+      <text x="148" y="276" fill="#0b0b0b" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="end">Requests</text>
+      <text x="148" y="292" fill="#52514e" font-size="9" font-family="'Geist Mono', monospace" text-anchor="end">249,232 · 2021-02-01</text>
+
+      <!-- Labels: column 2, centred in the gutter above the bar -->
+      <text x="506" y="96" fill="#0b0b0b" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Bidded</text>
+      <text x="506" y="112" fill="#52514e" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle">124,152 · 49.8%</text>
+
+      <!-- Labels: column 3, outside, anchored start -->
+      <text x="864" y="148" fill="#0b0b0b" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="start">Won</text>
+      <text x="864" y="164" fill="#52514e" font-size="9" font-family="'Geist Mono', monospace" text-anchor="start">46,562 · 37.5% of bids</text>
+      <text x="864" y="180" fill="#2a78d6" font-size="9" font-family="'Geist Mono', monospace" text-anchor="start">4,368 clicks · CTR 9.4%</text>
+
+      <text x="864" y="252" fill="#0b0b0b" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="start">Lost</text>
+      <text x="864" y="268" fill="#52514e" font-size="9" font-family="'Geist Mono', monospace" text-anchor="start">77,590 · 62.5% of bids</text>
+
+      <text x="864" y="404" fill="#0b0b0b" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="start">Skipped</text>
+      <text x="864" y="420" fill="#52514e" font-size="9" font-family="'Geist Mono', monospace" text-anchor="start">125,080 · no bid placed</text>
+
+      <!-- Legend -->
+      <line x1="40" y1="532" x2="960" y2="532" stroke="rgba(11,11,11,0.10)" stroke-width="0.8"/>
+      <text x="40" y="548" fill="#52514e" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.18em">LEGEND</text>
+
+      <rect x="40" y="560" width="16" height="8" fill="rgba(82,81,78,0.18)" stroke="#52514e" stroke-width="1"/>
+      <text x="64" y="568" fill="#52514e" font-size="8.5" font-family="'Geist', sans-serif">Flow · where opportunities go</text>
+
+      <rect x="240" y="560" width="16" height="8" fill="rgba(42,120,214,0.28)" stroke="#2a78d6" stroke-width="1"/>
+      <text x="264" y="568" fill="#52514e" font-size="8.5" font-family="'Geist', sans-serif">Won path · the only impressions that can click</text>
+
+      <rect x="520" y="560" width="16" height="8" fill="#0b0b0b"/>
+      <text x="544" y="568" fill="#52514e" font-size="8.5" font-family="'Geist', sans-serif">Node · stage total</text>
+
+      <text x="660" y="568" fill="#52514e" font-size="8.5" font-family="'Instrument Serif', serif" font-style="italic">Half of all opportunities never reach an auction.</text>
+    </svg>
