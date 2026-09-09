@@ -1,0 +1,19 @@
+# --- Data (do not publish the dataset; 112MB > GitHub limit anyway) ---
+data/*.csv
+data/*.zip
+*.zip
+
+# --- Assignment brief (kept out of the public repo) ---
+Analysis-NSRB.pdf
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+
+# --- Jupyter / OS ---
+.DS_Store
+*.log
