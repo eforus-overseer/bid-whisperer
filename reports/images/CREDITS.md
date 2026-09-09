@@ -16,14 +16,22 @@ above wherever the photo appears, so the README repeats it under the image.
 Both photos were found through the Openverse API (https://api.openverse.org), which
 indexes Flickr's openly licensed photos and returns the licence metadata used here.
 
-## Third-party illustrations (unknown licence, included at project owner's request)
+## Free to use (Pexels)
 
-These illustrative graphics were provided by the project owner. Their original source
-and licence are not documented; they are used here for private portfolio and
-educational purposes only and should be removed before any public or commercial
-publication.
+Pexels photos are free to use and do not require attribution; it is given anyway.
+These are the files Pexels serves at 1600 px and have not been edited.
 
-| File | Description |
-|---|---|
-| `rtb-auction-mechanics.webp` | RTB auction illustration showing five bidders with paddles, bid amounts and what each pays; illustrates first-price vs second-price mechanics. |
-| `in-app-bidding.jpg` | Illustration of multiple demand partners bidding simultaneously for one mobile ad slot. |
+| File | Title | Photographer | Source |
+|---|---|---|---|
+| `advertising-screens.jpg` | "Times Square" | Ayman Bardi | https://www.pexels.com/photo/27147543/ |
+| `obfuscated-code.jpg` | "Colorful Source Code on Computer Screen" | Markus Spiske | https://www.pexels.com/photo/1921326/ |
+
+See the [Pexels licence](https://www.pexels.com/license/) for terms.
+
+## Unused (kept in the repository, not published on the site)
+
+The two clip-art illustrations the project owner originally provided
+(`rtb-auction-mechanics.webp`, `in-app-bidding.jpg`) have unknown provenance and are
+no longer referenced by the README or the report site. The historical
+`times-square-1910.jpg` (CC0) and `curbstone-brokers.jpg` (CC BY 2.0, dbking) remain
+in use in the README.
