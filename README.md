@@ -13,8 +13,9 @@ One day inside a real-time bidding log: what drives a click, and what it costs t
 <p align="center"><sub>Times Square, 1910. Ad slots were auctioned then too, just more slowly. Photo: JFGryphon, CC0 1.0 (<a href="reports/images/CREDITS.md">credits</a>).</sub></p>
 
 <p align="center">
-  <img src="reports/images/in-app-bidding.jpg" alt="Multiple demand partners simultaneously bidding for one mobile ad slot" width="70%">
+  <img src="reports/images/advertising-screens.jpg" alt="Times Square at night, a crowd beneath walls of glowing digital advertising screens" width="100%">
 </p>
+<p align="center"><sub>Every screen is an ad slot, every passer-by an impression. Photo by Ayman Bardi on Pexels.</sub></p>
 
 A programmatic ad exchange auctions each ad slot in a few milliseconds. This
 repository takes one day of US bid-request logs from a take-home assignment
@@ -73,10 +74,6 @@ CTR is computed only on won impressions because it is undefined on lost ones.
 </table>
 
 ### Q3. The bid landscape
-
-<p align="center">
-  <img src="reports/images/rtb-auction-mechanics.webp" alt="Five bidders holding paddles with bid amounts; the highest bidder wins but in a second-price auction pays only the runner-up's price" width="80%">
-</p>
 
 To win, a bid has to beat the market clearing price, so `P(win | bid) = F(bid)`
 where `F` is the clearing-price CDF, and the bid that wins X% of the time is the
@@ -157,6 +154,11 @@ top at about 12% and Louisiana at the bottom at 6.5%, with thin states hatched.
 ![Tile grid map of CTR by US state; Maryland and Kentucky highest, Louisiana lowest](reports/figures/layer_state_map.png)
 
 ### Can the obfuscation be undone?
+
+<p align="center">
+  <img src="reports/images/obfuscated-code.jpg" alt="Dense minified source code on a dark screen, too compressed to read at a glance" width="100%">
+</p>
+<p align="center"><sub>Minified code reads to a machine and hides from a person, much like a salted hash. Photo by Markus Spiske on Pexels.</sub></p>
 
 `domain`, `url`, `ad_slot` and `publisher_properties` are 32-character lowercase
 hex strings with a flat first-digit distribution, which is what an MD5-style digest
