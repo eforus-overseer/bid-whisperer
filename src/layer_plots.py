@@ -42,7 +42,7 @@ def _ink_for(face) -> str:
 # --------------------------------------------------------------------------- distribution
 def plot_overpay(fp: pd.DataFrame, curve: pd.DataFrame, stats: dict) -> plt.Figure:
     """Left: distribution of overpay. Right: the flat bid-shading replay."""
-    fig, axes = plt.subplots(1, 2, figsize=(11.5, 4.3))
+    fig, axes = plt.subplots(1, 2, figsize=(13, 5))
 
     ax = axes[0]
     ratio = fp["overpay_ratio"].clip(lower=0, upper=1)
@@ -91,7 +91,7 @@ def plot_hourly(hp: pd.DataFrame) -> plt.Figure:
         ("median_cpm", "Median bid (CPM)", "{:.2f}", None),
         ("ctr", "CTR on served impressions", "{:.1%}", PCT1),
     ]
-    fig, axes = plt.subplots(len(panels), 1, figsize=(8.5, 10.5), sharex=True)
+    fig, axes = plt.subplots(len(panels), 1, figsize=(11, 13), sharex=True)
     for ax, (col, title, fmt, formatter) in zip(axes, panels):
         ax.axvspan(7.5, 10.5, color=SHADE, zorder=0, lw=0)
         ax.plot(hp["hour"], hp[col], color=vs.SEQUENTIAL, lw=2, marker="o", ms=3.5)
@@ -164,7 +164,7 @@ def plot_lorenz(curves: dict, n_domains: int) -> plt.Figure:
 # --------------------------------------------------------------------------- magnitude
 def plot_browser_os(browser: pd.DataFrame, os_table: pd.DataFrame, overall_ctr: float, min_served: int = 300) -> plt.Figure:
     """Two rows (browser, OS) of two sorted bar panels (share, CTR)."""
-    fig, axes = plt.subplots(2, 2, figsize=(11.5, 7.4))
+    fig, axes = plt.subplots(2, 2, figsize=(13, 8.5))
     for row, (name, table) in enumerate([("browser", browser), ("os", os_table)]):
         d = table.sort_values("share", ascending=True)
         weak = d["served"].fillna(0) < min_served
@@ -198,7 +198,7 @@ def plot_browser_os(browser: pd.DataFrame, os_table: pd.DataFrame, overall_ctr: 
 # --------------------------------------------------------------------------- correlation
 def plot_archetypes(labelled: pd.DataFrame, names: dict, n_label: int = 6) -> plt.Figure:
     """Bubble scatter of domains: device mix vs price level, coloured by archetype."""
-    fig, ax = plt.subplots(figsize=(9.5, 6.2))
+    fig, ax = plt.subplots(figsize=(11, 7))
     d = labelled.dropna(subset=["median_bid"])
     d = d[d["median_bid"] > 0]
     for c in sorted(d["cluster"].unique()):

@@ -1318,7 +1318,7 @@
     "integer_bruteforce": {
       "n": 1000000,
       "hits": 0,
-      "seconds": 0.4
+      "seconds": 0.5
     },
     "dictionary": {
       "status": "ran",
@@ -1326,7 +1326,7 @@
       "n_words": 1000000,
       "digests": 36000000,
       "hits": 0,
-      "seconds": 16.349251985549927
+      "seconds": 17.707607984542847
     }
   }
 }

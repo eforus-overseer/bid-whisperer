@@ -482,7 +482,7 @@ _COLORS = {"hgb_full": vs.CATEGORICAL[0], "hgb_no_id": vs.CATEGORICAL[1], "logre
 def plot_ctr_roc_pr(res: dict):
     import matplotlib.pyplot as plt
 
-    fig, axes = plt.subplots(1, 2, figsize=(11, 4.4))
+    fig, axes = plt.subplots(1, 2, figsize=(12, 5))
     for n in ["hgb_full", "hgb_no_id", "logreg"]:
         c = res["curves"][n]
         auc = res["metrics"].loc[n, "roc_auc"]
