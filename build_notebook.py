@@ -232,7 +232,7 @@ md("### 2.1 Categorical feature strength: information value")
 code(r"""iv = cf.rank_categorical_iv(won, cat_candidates)
 display(iv.style.format({"information_value":"{:.4f}"}))
 
-fig, ax = plt.subplots(figsize=(11,5.5))
+fig, ax = plt.subplots(figsize=(9,4.8))
 colors = {"strong":vs.STATUS["good"], "medium":vs.CATEGORICAL[0], "weak":vs.CATEGORICAL[3], "useless":vs.INK_MUTED}
 bar_colors = [colors[str(s)] for s in iv["strength"]]
 ax.barh(iv["feature"], iv["information_value"], color=bar_colors)
@@ -250,7 +250,7 @@ md("### 2.2 Numeric feature strength: mutual information")
 code(r"""mi = cf.rank_numeric_mi(won, num_candidates)
 display(mi.style.format({"mutual_info":"{:.5f}"}))
 
-fig, ax = plt.subplots(figsize=(10,3.5))
+fig, ax = plt.subplots(figsize=(9,3.5))
 ax.barh(mi["feature"], mi["mutual_info"], color=vs.SEQUENTIAL); ax.invert_yaxis()
 for y,v in enumerate(mi["mutual_info"]):
     ax.text(v+2e-4, y, f"{v:.4f}", va="center", fontsize=9, color=vs.INK_SECONDARY)

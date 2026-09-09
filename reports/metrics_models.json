@@ -133,7 +133,7 @@
         "importance_std": 0.00134
       }
     ],
-    "runtime_s": 12.6
+    "runtime_s": 10.5
   },
   "quantile_regression": {
     "split": {
@@ -229,7 +229,7 @@
         "coverage_at_50": 0.53575
       }
     ],
-    "runtime_s": 19.0
+    "runtime_s": 14.9
   },
-  "total_runtime_s": 33.6
+  "total_runtime_s": 27.3
 }

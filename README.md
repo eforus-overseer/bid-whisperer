@@ -116,12 +116,9 @@ request context where the lookup only has a domain or global fallback. The
 recommended design keeps the lookup for slots with history and routes new pairs to
 the regressor.
 
-<table>
-<tr>
-<td width="50%"><img src="reports/figures/ml_ctr_roc_pr.png" alt="ROC and precision-recall curves for the three CTR models"></td>
-<td width="50%"><img src="reports/figures/ml_qr_coverage.png" alt="Coverage against target quantile for quantile regression and the hierarchical lookup on unseen pairs"></td>
-</tr>
-</table>
+![ROC and precision-recall curves for the three CTR models](reports/figures/ml_ctr_roc_pr.png)
+
+![Coverage against target quantile for quantile regression and the hierarchical lookup on unseen pairs](reports/figures/ml_qr_coverage.png)
 
 ### Seven more layers
 
@@ -146,16 +143,13 @@ publishers at 12.9%, and 21 domains where 96% of auctions are second-price, the
 median bid is 24 CPM and we win 88% of the time. A state tile map puts Maryland and Kentucky on
 top at about 12% and Louisiana at the bottom at 6.5%, with thin states hatched.
 
-<table>
-<tr>
-<td width="50%"><img src="reports/figures/layer_overpay.png" alt="Histogram of overpay as a share of bid, and the shading curve of wins kept against spend saved"></td>
-<td width="50%"><img src="reports/figures/layer_archetypes.png" alt="Bubble chart of domains by mobile share and median bid, coloured by archetype"></td>
-</tr>
-<tr>
-<td width="50%"><img src="reports/figures/layer_hourly.png" alt="Small multiples of requests, bid rate, win rate, median bid and CTR by hour"></td>
-<td width="50%"><img src="reports/figures/layer_state_map.png" alt="Tile grid map of CTR by US state"></td>
-</tr>
-</table>
+![Histogram of overpay as a share of bid, and the shading curve of wins kept against spend saved](reports/figures/layer_overpay.png)
+
+![Small multiples of requests, bid rate, win rate, median bid and CTR by hour of the day UTC](reports/figures/layer_hourly.png)
+
+![Bubble chart of domains by mobile share vs median bid, coloured by publisher archetype](reports/figures/layer_archetypes.png)
+
+![Tile grid map of CTR by US state; Maryland and Kentucky highest, Louisiana lowest](reports/figures/layer_state_map.png)
 
 ### Can the obfuscation be undone?
 
