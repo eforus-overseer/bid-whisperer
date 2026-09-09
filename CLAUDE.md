@@ -37,6 +37,8 @@ The primary deliverable is `notebooks/analysis.ipynb`. Analysis logic lives in
 | `scripts/run_models.py`, `scripts/run_layers.py` | Standalone runs that write `reports/metrics_models.json`, `reports/metrics_layers.json` and the figures. |
 | `reports/diagrams/` | Three hand-built diagrams (Sankey funnel, ER schema, pricing architecture) as HTML with inline SVG; exports in `reports/figures/diagram_*.svg` and `.png`. |
 | `reports/images/` | Two CC-licensed photos and `CREDITS.md`. `reports/images/candidates/` is git-ignored scratch. |
+| `docs/` | GitHub Pages site (https://eforus-overseer.github.io/bid-whisperer/). `index.html` is a hand-built editorial report; `charts.js` renders interactive Plotly figures from `docs/assets/site_data.json`; `notebook.html` is the executed notebook as a secondary page. |
+| `scripts/build_site_data.py` | Computes the aggregates the site charts need and writes `docs/assets/site_data.json` (aggregates only, never raw rows). Rerun after the figures change. |
 
 ## Domain facts that encode real bugs if ignored
 

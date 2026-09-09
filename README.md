@@ -3,6 +3,11 @@
 One day inside a real-time bidding log: what drives a click, and what it costs to win.
 
 <p align="center">
+  <strong><a href="https://eforus-overseer.github.io/bid-whisperer/">Read the interactive report →</a></strong><br>
+  <sub>The findings as an illustrated data story with interactive Plotly charts.</sub>
+</p>
+
+<p align="center">
   <img src="reports/images/times-square-1910.jpg" alt="Times Square in 1910, every wall covered in painted billboards" width="100%">
 </p>
 <p align="center"><sub>Times Square, 1910. Ad slots were auctioned then too, just more slowly. Photo: JFGryphon, CC0 1.0 (<a href="reports/images/CREDITS.md">credits</a>).</sub></p>
