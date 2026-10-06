@@ -262,3 +262,11 @@ Everything rests on one day of data, so there is no temporal holdout and prices 
 assumed stable within the day.
 
 Photo credits are in [`reports/images/CREDITS.md`](reports/images/CREDITS.md).
+
+---
+
+<!-- demo-lab:start -->
+## Explore this project
+
+[Project page & walkthrough](https://eforus-overseer.github.io/demo-lab/projects/bid-whisperer/) — Explore the project, its method, and available demos or original artifacts.
+<!-- demo-lab:end -->
