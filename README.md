@@ -68,7 +68,7 @@ CTR is computed only on won impressions because it is undefined on lost ones.
 
 <table>
 <tr>
-<td width="50%"><img src="reports/figures/q2_iv_ranking.png" alt="Information value by categorical feature; device_brand leads at about 0.11"></td>
+<td width="50%"><img src="reports/figures/q2_iv_ranking_v2.png" alt="Information value by categorical feature; device_brand leads at about 0.11"></td>
 <td width="50%"><img src="reports/figures/q2_signal_trends.png" alt="CTR rises with session depth and with viewability"></td>
 </tr>
 </table>
