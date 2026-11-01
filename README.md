@@ -273,8 +273,8 @@ Photo credits are in [`reports/images/CREDITS.md`](reports/images/CREDITS.md).
 
 
 <!-- codex-pixel-art -->
-## Pixel art
+## Project visual
 
-![Pixel art for bid-whisperer](assets/pixel-art.svg)
+![Pixel-art cover for bid-whisperer](assets/project-cover.png)
 
-A small visual signature for this repository.
+<sub>Pixel-art adaptation of [3D illustration image of a gavel - auction hammer - free to use in your projects 01](https://commons.wikimedia.org/wiki/File:3D_illustration_image_of_a_gavel_-_auction_hammer_-_free_to_use_in_your_projects_01.jpg) by Quince Media, licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0). Source: Wikimedia Commons.</sub>
