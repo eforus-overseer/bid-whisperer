@@ -270,3 +270,11 @@ Photo credits are in [`reports/images/CREDITS.md`](reports/images/CREDITS.md).
 
 [Project page & walkthrough](https://eforus-overseer.github.io/demo-lab/projects/bid-whisperer/) — Explore the project, its method, and available demos or original artifacts.
 <!-- demo-lab:end -->
+
+
+<!-- codex-pixel-art -->
+## Pixel art
+
+![Pixel art for bid-whisperer](assets/pixel-art.svg)
+
+A small visual signature for this repository.
