@@ -277,4 +277,4 @@ Photo credits are in [`reports/images/CREDITS.md`](reports/images/CREDITS.md).
 
 ![Pixel-art cover for bid-whisperer](assets/project-cover.png)
 
-<sub>Pixel-art adaptation of [3D illustration image of a gavel - auction hammer - free to use in your projects 01](https://commons.wikimedia.org/wiki/File:3D_illustration_image_of_a_gavel_-_auction_hammer_-_free_to_use_in_your_projects_01.jpg) by Quince Media, licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0). Source: Wikimedia Commons.</sub>
+<sub>Pixel-art adaptation of [OpenMoji hammer](https://github.com/hfg-gmuend/openmoji/blob/master/color/618x618/1F528.png) by OpenMoji contributors, licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Source: OpenMoji.</sub>
